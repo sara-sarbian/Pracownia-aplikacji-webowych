@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrukcja IF</title>
+</head>
+<body>
+    <script>
+        /*
+            Zasady:
+                *DRY - don't repeat yourself
+                *KISS - keept it simple, stupid
+                *YAGNI - you aren't gonna need it
+                *SOLID - 
+                
+                 
+                 
+        
+
+
+        /*
+        
+        /*
+            Operatory porównania:
+            > - większe
+            < - mniejsze
+            >= - większe bądź równe
+            <= - mniejsze bądź równe
+            == - równe
+            === - równe muszą być też typy
+            != - różne
+            !== - różne ale te same typy
+
+
+            Operatory logiczne:
+            && - and
+            || - or
+            ! - not
+
+
+            a   b   a && b   a || b   !a 
+            F   F      F        F      T
+            F   T      F        T      T 
+            T   F      F        T      F
+            T   T      T        T      F
+            
+
+        
+        */
+
+
+
+
+        //Pobierz od użytkownika liczbę i wyświetl czy jest ona dodatnia czy ujemna
+        function task1()
+        {
+            var numberFromUser;
+
+            numberFromUser = 5;
+
+            if (numberFromUser >= 0) 
+            {
+                document.writeln("Liczba jest dodatnia <br/>");
+            }
+
+            if (numberFromUser < 0)
+                document.writeln("Liczba jest ujemna <br/>");
+
+            if (numberFromUser >= 0) 
+                document.writeln("Liczba jest dodatnia <br/>");
+            else
+                document.writeln("Liczba jest ujemna <br/>");
+        }
+
+
+        ////Napisz program,
+        // który wyświetli informacje czy liczba jest parzysta czy nieparzysta.
+        function task2()
+        {
+            var numberFromUser = 89;
+
+            var rest = numberFromUser % 2;
+
+            if (rest == 0)
+                document.write("Liczba parzysta<br/>");
+            else
+                document.write("Liczba nieparzysta<br/>");
+        }
+
+        //Napisz program, który wyświetli informacje
+        // czy liczba jest z zakresu <1;10).
+        function task3()
+        {
+            var number = 78;
+
+            //wersja 1
+            if (number >=1 )
+
+            {
+               if(number<10)
+               document.write("Liczba jest z przedziału<br/>");
+               else
+               document.write("Liczba spoza przedziału<br/>");
+            }
+            
+            else
+                document.write("Liczba spoza przedziału<br/>");
+        
+                //wersja 2
+            if (number >=1 )
+
+            {
+               if(number<10)
+               document.write("Liczba jest z przedziału<br/>");
+               else
+               document.write("Liczba spoza przedziału<br/>");
+            }
+            
+            else
+                document.write("Liczba spoza przedziału<br/>");
+
+                   //wersja 3
+            if (number >=1 )
+
+            {
+            if(number<10)
+            document.write("Liczba jest z przedziału<br/>");
+             else
+             document.write("Liczba spoza przedziału<br/>");
+            }
+
+            else
+                  document.write("Liczba spoza przedziału<br/>");
+
+                //wersja 4
+            if (number >=1 && Number <10)
+
+   document.write("Liczba jest z przedziału<br/>");
+           else
+   document.write("Liczba spoza przedziału<br/>");
+
+
+   //wersja 5
+   if (number >=1 )
+
+   document.write("Liczba jest z przedziału<br/>");
+   else
+   document.write("Liczba spoza przedziału<br/>");
+
+
+
+
+
+        }
+
+        //task1();
+        //task2();
+        task3();
+
+
+
+
+    </script>
+</body>
+</html>

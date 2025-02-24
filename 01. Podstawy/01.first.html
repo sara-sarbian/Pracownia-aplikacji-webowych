@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierwsza strona</title>
+</head>
+<body>
+    <h1>Pierwsza strona w JS</h1>
+    <script>
+        //Ta instrukcja wyświetli
+        // na stronie tekst
+        /*
+            To jest komentarz
+            wielolinijkowy.
+        */
+
+        //Ta instrukcja wyświetli na stronie tekst
+        document.write("Hello world");
+        document.write("9"); //tekst
+        document.write(9); //liczba całkowita
+        document.write(5.4); //liczba rzeczywista
+
+        //document.write("Hello world");
+
+        //Nazwa zmiennej jest to identyfikator.
+        //Warunki poprawnego identyfikatora:
+        //* składa się tylko z dozwolonych znaków
+        //  - alfabet angielski a-z oraz A-Z
+        //  - cyfry arabskie 0-9
+        //  - podkreślenie _
+        //* nie może zaczynać się od cyfry
+        //* nie może to być słowo kluczowe języka
+        //* musi być ono unikalne w swoim zakresie widoczności
+
+        //Warunki wymagane przez programistów:
+        //* nazwa musi oddawać charakter użycia
+        //* nazwa po angielsku
+        //* nazwa z wielu słów: snake_case, camelCase
+ 
+        var userName;
+
+        userName = "Jan";
+        document.write("<br/>");
+        document.write("Nazywam się: ");
+        document.write(userName);
+        document.write("<br/>");
+
+        var firstNumber, secondNumber, result;
+
+        firstNumber = 58;
+        secondNumber = 12;
+
+        result = firstNumber + secondNumber;
+        document.writeln("Wynik dodawania: "+ result);
+
+        result = - firstNumber;  //-58
+
+        firstNumber = firstNumber + 8;
+        firstNumber += 8;
+
+        firstNumber = firstNumber + 2 * secondNumber;
+        firstNumber += 2* secondNumber;
+
+        firstNumber = firstNumber * 2 + secondNumber;
+        //firstNumber *= 2 + secondNumber;  //To nie to samo
+
+        firstNumber = firstNumber * (2 + secondNumber);
+        firstNumber *= 2 + secondNumber;
+
+        firstNumber = firstNumber + 1;
+        firstNumber += 1;
+
+        firstNumber = 5;
+        firstNumber++;
+        document.writeln("Wynik firstNumber++: "+ firstNumber);  //6
+
+        firstNumber = 5;
+        ++firstNumber;
+        document.writeln("Wynik ++firstNumber: "+ firstNumber);  //6
+        
+        firstNumber = 5;
+        result = ++firstNumber;
+        document.writeln("Wynik ++firstNumber: "+ firstNumber); //6
+        document.writeln("Wynik result: "+ result); //6
+
+        firstNumber = 5;
+        result = firstNumber++; 
+        document.writeln("Wynik firstNumber++: "+ firstNumber); //6
+        document.writeln("Wynik result: "+ result); //5
+
+        firstNumber = 5;
+        secondNumber = 5;
+
+        firstNumber = secondNumber = 5;
+    </script>
+
+    <div>
+        To juz będzie poniżej
+    </div>
+</body>
+</html>
