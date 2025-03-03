@@ -148,15 +148,136 @@
    else
    document.write("Liczba spoza przedziału<br/>");
 
-
-
-
-
         }
+
+
+
+
+         /*
+        *. 
+        *. 
+        *. 
+        *.
+        *. 
+        *. 
+        *. Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
+        *. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+
+        *. Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
+        Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
+        poniżej 16 - wygłodzenie
+        16 - 16.99 - wychudzenie
+        17 - 18.49 - niedowagę
+        18.5 - 24.99 - wagę prawidłową
+        25.0 - 29.9 - nadwagę
+        30.0 - 34.99 - I stopień otyłości
+        35.0 - 39.99 - II stopień otyłości
+        powyżej 40.0 - otyłość skrajną
+
+        Wzór:
+
+        BMI = masa/wysokość^2
+
+        *. Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. Wyświetl odpowiedni komunikat.
+        *. Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
+        *. Program sprawdzający czy podana data jest poprawna (np. sprawdzając, czy dzień jest z zakresu od 1 do 31, miesiąc od 1 do 12 itd.)
+
+        */
+       //Napisz program, który wykona dzielenie dwóch liczb
+       function task4()
+
+       {
+        var firstNumber, secondNumber, result;
+        firstNumber=10
+        secondNumber=2
+        result=firstNumber/secondNumber
+        document.writeln("wynik dzielenia"+result);
+       }
 
         //task1();
         //task2();
-        task3();
+        //task3();
+        //task4();
+        //task5();
+        //task6();
+        //task7();
+        //task8();
+        task9();
+
+
+  //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
+   function task5()
+   {
+    var numberFromUser, secondNumber;
+    firstNumber=5;
+    secondNumber=4
+
+   if(firstNumber == secondNumber)
+  {
+     document.writeln("liczny są równe<br/>");        
+     }
+ if(firstNumber < secondNumber)
+  {
+     document.writeln("liczny są nierówne<br/>");
+ }
+  if(firstNumber > secondNumber)
+  {
+       document.writeln("liczny są równe<br/>");    
+   }  }
+
+  //Napisz program, który poprosi użytkownika o podanie wieku i sprawdzi, czy osoba jest pełnoletnia. Wyświetl odpowiedni komunikat.
+  function task6()
+  {
+     var numberFromUser=17
+
+     if(numberFromUser<18)
+     document.writeln("niepełnoletni"<br/>);
+    else
+    document.writeln("pełnoletni<br/>")
+        
+  }
+
+  // Napisz program, który poprosi użytkownika o podanie liczby całkowitej i obliczy jej wartość bezwzględną. Wyświetl wynik.
+  function task7()
+  {
+    var numberFromUser = 4
+
+    if(numberFromUser>0)
+     document.writeln("watość bezwględna" + numberFromUser);
+     if(numberFromUser<0)
+    document.writeln("wartość bezwzględna" + numberFromUser*(-1));
+  }
+
+  //Napisz program, który poprosi użytkownika o podanie liczby od 1 do 7 i wyświetli odpowiadający mu dzień tygodnia.
+  function task8()
+  {
+    var numberFromUser=5;
+
+    if(numberFromUser==1)
+     document.writeln("poniedziałek");
+    if(numberFromUser==2)
+     document.writeln("wtorek");
+    if(numberFromUser==3)
+      document.writeln("środa");
+    if(numberFromUser==4)
+     document.writeln("czwartek");
+    if(numberFromUser==5)
+     document.writeln("piątek");
+    if(numberFromUser==6)
+     document.writeln("sobota");
+    if(numberFromUser==7)
+     document.writeln("niedziela");
+  }
+
+ //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
+ function task9()
+ {
+
+ }
+
+        
+
+
 
 
 
