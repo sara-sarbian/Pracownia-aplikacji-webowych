@@ -160,27 +160,14 @@
         *.
         *. 
         *. 
-        *. Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+        *. 
+        *. 
 
-        *. Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
-        Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
-        poniżej 16 - wygłodzenie
-        16 - 16.99 - wychudzenie
-        17 - 18.49 - niedowagę
-        18.5 - 24.99 - wagę prawidłową
-        25.0 - 29.9 - nadwagę
-        30.0 - 34.99 - I stopień otyłości
-        35.0 - 39.99 - II stopień otyłości
-        powyżej 40.0 - otyłość skrajną
+        *. 
 
-        Wzór:
-
-        BMI = masa/wysokość^2
-
-        *. Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
-        *. Program sprawdzający czy podana data jest poprawna (np. sprawdzając, czy dzień jest z zakresu od 1 do 31, miesiąc od 1 do 12 itd.)
+        *. 
+        *. 
+        *. 
 
         */
        //Napisz program, który wykona dzielenie dwóch liczb
@@ -202,7 +189,15 @@
         //task6();
         //task7();
         //task8();
-        task9();
+        //task9();
+       // task10();
+       //task11();
+       //task12();
+       //task13();
+       //task14();
+       task15();
+
+
 
 
   //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
@@ -272,15 +267,135 @@
  //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
  function task9()
  {
+    var firstNumber, secondNumber, result;
+
+    firstNumber=5;
+    secondNumber=6;
+
+    if(firstNumber>secondNumber);
+      document.writeln("pierwsza liczba wieksza<br/>");
+    if(firstNumber<secondNumber);
+      document.writeln("druga liczba wieksza<br/>");
+    if(firstNumber==secondNumber);
+      document.writeln("równa<br/>");
 
  }
 
-        
+
+//Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
+function task10()
+{
+    var numberFromUser=2000;
+
+    if(numberFromUser %4 == 0 && numberFromUser % 100 != 0 || numberFromUser % 400 == 0);
+      document.writeln("rok jest przestepny<br/>");
+    else
+      document.writeln("rok nie jest przestepny<br/>");
+}
 
 
+//Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+function task11()
+{
+    var numberFromUser=30;
+
+    if(numberFromUser % 3 == 0 & numberFromUser % 5 == 0);
+      document.writeln("liczba podzielna przez 3 i 5 <br/>");
+    else
+      document.writeln("liczba nie podzielna przez 3 i 5<br/>");
+
+}
+/*Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
+Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
+        poniżej 16 - wygłodzenie
+        16 - 16.99 - wychudzenie
+        17 - 18.49 - niedowagę
+        18.5 - 24.99 - wagę prawidłową
+        25.0 - 29.9 - nadwagę
+        30.0 - 34.99 - I stopień otyłości
+        35.0 - 39.99 - II stopień otyłości
+        powyżej 40.0 - otyłość skrajną
+
+        Wzór:
+
+        BMI = masa/wysokość^2 
+*/ 
+function task12()
+{
+    var Mass, height, BMI;
+
+    Mass=100;
+    height=1.9;
+    BMI=Mass / (height+ height);
+
+if(bmi < 16);
+    document.writeln("wyglodzenie<br/>");
+else if (bmi<18.5)
+    document.writeln("wychudzenie<br/>");
+else if (bmi<25)
+    document.writeln("waga prawidlowa<br/>");
+else if(bmi<30)
+    document.writeln("nadwaga<br/>");
+else if(bmi<35)
+    document.writeln("1 stopien otylosci<br/>");
+else if (bmi<40)
+   document.writeln("2 stopien otylosci");
+else
+   document.writeln("otylosc skrajna <br/>");
+    
+}
+
+//Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. Wyświetl odpowiedni komunikat.
+function task13()
+{
+    var firstLength, secondLength, thirdLength;
+
+    firstLength= 1;
+    secondLength= 1;
+    thirdLength= 15;
+
+    if(firstLength+secondLength > thirdLength && secondLength + thirdLength > firstLength && thirdLength + firstLength > secondLength)
+      document.writeln("mozna zbudowac trojkat<br/>");
+    else 
+      document.writeln("pierwiastek nie jest obliczalny<br/>");
+
+}
 
 
+//Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
+function task14()
+{
+    var numberFromUser= -3;
 
+    if(numberFromUser > 0 )
+    document.writeln("pierwiastek jest obliczalny<br/>");
+    else
+      document.writeln("pierwistek nie jest obliczalny<br/>");
+
+}
+
+//Program sprawdzający czy podana data jest poprawna (np. sprawdzając, czy dzień jest z zakresu od 1 do 31, miesiąc od 1 do 12 itd.)
+function task15()
+{
+    var day, month, year;
+
+    day=10;
+    month=4;
+    year=2005;
+
+    if(day <= 31)
+      document.writeln("dzien jest poprawny<br/>");
+    else
+      document.writeln("dzien jest bledny<br/>");
+    if (month<=12)
+     document.writeln("miesiac jest poprawny<br/>");
+    else
+     document.writeln("miesiac jest bledny<br/>");
+    if(year<=2025)
+    document.writeln("roj jest poprawny");
+else
+    document.writeln("rok jest bledny<br/>");
+}
 
     </script>
 </body>
