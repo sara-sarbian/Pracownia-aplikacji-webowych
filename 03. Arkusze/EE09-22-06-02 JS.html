@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>Podaj składowa H koloru w kodzie HSL</h2>
+        <p>0 do 30 czerwienia, do 60 żółcie, do 150 zielenie, do 250 niebieskie, do 360 fiolet i purpura</p>
+        <input type="number" placeholder="0 - 360" name="kolor" id="kolor" max="360">
+        <button type="submit" onclick="paleta()">Generuj paletę</button>
+        <label>
+            <tr>
+                <td colspan="4">Kolor główny</td>
+            </tr>
+            <tr> 
+                <th>kolor 2</th>
+                <th>kolor 3</th>
+                <th>kolor 4</th>
+                <th>kolor 5</th>
+            </tr>
+        </label>
+        <script>
+            function paleta() {
+                var h = document.getElementById("kolor").value;
+                var table = document.querySelector('table');
+                var wiersze = table.querySelectorAll('td');
+                for (var i = 0; i<wiersze.lenght; i++)
+                    if (i === 0){
+                        wiersze[i].style.backgroundColor = "hsl(" + h + ", 100%, 50%)";
+                    }
+                    else if (i === 1) {
+                    wiersze[i].style.backgroundColor = "hsl(" + h + ", 80%, 50%)";
+                    }
+                    else if (i === 2) {
+                        wiersze[i].style.backgroundColor = "hsl(" + h + ", 60%, 50%)";
+                    }
+                    else if (i === 3) {
+                        wiersze[i].style.backgroundColor = "hsl(" + h + ", 40%, 50%)";
+                    }
+                    else
+                        wiersze[i].style.backgroundColor = "hsl(" + h + ", 20%, 50%)";
+        }
+    </script>
+</body>
+</html>

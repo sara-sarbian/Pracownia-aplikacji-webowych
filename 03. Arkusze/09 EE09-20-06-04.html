@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function cena() {
+        let suma = 0;
+        let piling = document.querySelector("#piling");
+        let maska = document.querySelector("#maska");
+        let masaz = document.querySelector("#masaz");
+        let regulacja = document.querySelector("#regulacja");
+        
+        if (piling.checked) {
+            suma += 45;
+        }
+        if (maska.checked) {
+            suma += 30;
+        }
+        if (masaz.checked) {
+            suma += 20;
+        }
+        if (regulacja.checked) {
+            suma += 5;
+        }
+        document.getElementById('wynik').innerHTML = "Cena zabiegów: " + suma;
+    }
+    </script>
+</body>
+</html>

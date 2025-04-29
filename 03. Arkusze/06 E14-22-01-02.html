@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function koszt(){
+    let kawa = document.getElementById("kawa").value;
+    let waga = document.getElementById("waga").value;
+    let cena;
+    if (kawa == 1){
+        cena = 5;
+    }
+    else if (kawa == 2){
+        cena = 7;
+    }
+    else if (kawa == 4){
+        cena = 6;
+    }
+    else {
+        cena = 0;
+    }
+
+    let koszt = waga*cena;
+    document.getElementById('wynik').innerHTML = "Koszt zamówienia wynosi: " + koszt + " zł";
+}
+    </script>
+</body>
+</html>

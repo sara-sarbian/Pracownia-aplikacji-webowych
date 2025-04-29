@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function cena() {
+        let cena;
+        if (document.getElementById("krotkie").checked){
+            cena = 25;
+        }
+        else if (document.getElementById("srednie").checked){
+            cena = 30;
+        }
+        else if (document.getElementById("poldlugie").checked){
+            cena = 40;
+        }
+        else if (document.getElementById("dlugie").checked){
+            cena = 50;
+        }
+        document.getElementById("wynik").innerHTML = "Cena strzyżenia: " + cena;
+    }
+    </script>
+</body>
+</html>
