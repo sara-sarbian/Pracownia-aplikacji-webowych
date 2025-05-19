@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="11 EE09-20-01-02 styl4.css">
+</head>
+<body>
+    <header>
+        <h2>Witamy na stacji paliw!</h2>
+    </header>
+    
+    <aside>
+        <a href="11 EE09-20-01-02 index.html">
+            <img src="C:\Users\Sala213\Desktop\home.png" alt="Strona główna">
+        </a>
+        <a href="11 EE09-20-01-02 kalkulacja.html">
+            <img src="C:\Users\Sala213\Desktop\znak.png" alt="Kalkulacja">
+        </a>
+    </aside>
+
+    <section id="prawy">
+        <img src="C:\Users\Sala213\Desktop\samochod.png" alt="grafika: samochód" style="height: 250px;">
+    </section>
+
+    <main>
+        <h2>Oblicz, ile litrów musisz zatankować</h2>
+        <p>dystans do przejechania w km</p>
+        <input type="number" id="dystans">
+        <p>Spalanie samachodu w l/100km</p>
+        <input type="number" id="Spalanie">
+        <button onclick="oblicz()">OBLICZ</button>
+        <p id="wynik"></p>
+    </main>
+
+    <footer>
+        <section id="lewaStopka">
+            <p>Stronę opracował: PESEL</p>
+        </section>
+        <section id="prawaStopka">
+            <a href="C:\Users\Sala213\Desktop\kwerendy.txt">Tu pobierzesz zapytania</a>
+        </section>
+    </footer>
+
+    <script>
+        function oblicz() {
+            const d = document.getElementById("dystans").value;
+            const s = document.getElementById("Spalanie").value;
+            const wynik = (d * s / 100).toFixed(2);
+            document.getElementById("wynik").innerText = "Potrzebujesz: " + wynik + " litrów paliwa";
+        }
+    </script>
+</body>
+</html>

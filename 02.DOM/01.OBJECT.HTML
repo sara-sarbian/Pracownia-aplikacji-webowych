@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>zdarzenia</title>
+</head>
+<script>
+    function changetext()
+    {
+        var firstdiv = document.getElementById("firstdiv");
+        firstdiv.innerText += "Nowy tekst";
+
+    }
+</script>
+<body>
+    <input type="button" value="Kliknij mnie" onclick="alert('kliknieto mnie')"/>
+
+    <div id="firstdiv"> jest div z zawartoscia</div>
+    <input type="button" value="podmien zawartosc" onclick="changetext()"/>
+    
+</body>
+</html>
